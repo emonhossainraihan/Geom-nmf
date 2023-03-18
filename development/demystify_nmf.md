@@ -18,6 +18,8 @@ from ..utils import atleast2d_or_csr, check_random_state, check_arrays
 from ..utils.extmath import randomized_svd, safe_sparse_dot
 
 
+# np.vstack is used to stack arrays vertically while sp.vstack is used to stack sparse matrices verticallysp.vstack concatenates the matrices vertically, just as np.vstack does (except it works with the coo attributes of the components)
+
 def safe_vstack(Xs):
     if any(sp.issparse(X) for X in Xs):
         return sp.vstack(Xs)
