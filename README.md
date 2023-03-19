@@ -25,6 +25,12 @@ Now watch `image_test.ipynb` file.
 
 `CBCL.mat` file contains 2429 images (columns), each image (column) contain a 19x19 matrix (361).
 
+### Tasks
+
+- [ ] Implementation of $\ell_{2,1}$ in PyTorch: assign @Hartz-I
+- [ ] Apply Low rank approximation (fast way) : assign @brucewayne404
+- [ ] Algorithm design @emonhossainraihan
+
 ### Question
 
 - [x] [Multiplicative update Rule in PyTorch](https://stackoverflow.com/q/75742628/9138425)
@@ -47,6 +53,11 @@ Now watch `image_test.ipynb` file.
 - [sparseness](https://math.stackexchange.com/questions/4212759/differentiable-sparsity-measure)
 - [Constrained optimization](https://www.youtube.com/watch?v=lvzH88DDaow&ab_channel=XiaojingYe)
 - [Nonnegative Matrix Factorizations for Clustering, Haesun Park, Georgia Institute of Technology](https://www.youtube.com/watch?v=EKvh4ANUHWM&ab_channel=MMDSFoundation)
+
+### UMAP
+
+- https://www.youtube.com/watch?v=G9s3cE8TNZo&ab_channel=MachineLearningDojowithTimScarfe
+- [umap code](https://github.com/lmcinnes/umap/tree/9b012b76b12da44e33314dc1029070baceb84616/umap)
 
 ### Are you a coder? then check this out!!!
 
