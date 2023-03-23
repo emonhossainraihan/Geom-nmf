@@ -27,7 +27,7 @@ Now watch `image_test.ipynb` file.
 
 ### Tasks
 
-- [ ] Implementation of $\ell_{2,1}$ in PyTorch: assign @Hartz-I
+- [ ] Implementation of $\ell_{2,1}$/$\ell_{0}$ in PyTorch: assign @Hartz-I & @Ratna-lodh
 - [ ] Apply Low rank approximation (fast way) : assign @brucewayne404
 - [ ] Algorithm design @emonhossainraihan
 
@@ -53,10 +53,12 @@ Now watch `image_test.ipynb` file.
 - [sparseness](https://math.stackexchange.com/questions/4212759/differentiable-sparsity-measure)
 - [Constrained optimization](https://www.youtube.com/watch?v=lvzH88DDaow&ab_channel=XiaojingYe)
 - [Nonnegative Matrix Factorizations for Clustering, Haesun Park, Georgia Institute of Technology](https://www.youtube.com/watch?v=EKvh4ANUHWM&ab_channel=MMDSFoundation)
+- [Optimization on matrix manifolds](https://math.stackexchange.com/a/472180/871843)
+- [Convex Optimization and Approximation](https://ee227c.github.io/)
 
 ### UMAP
 
-- https://www.youtube.com/watch?v=G9s3cE8TNZo&ab_channel=MachineLearningDojowithTimScarfe
+- [Paper Review - UMAP](https://www.youtube.com/watch?v=G9s3cE8TNZo&ab_channel=MachineLearningDojowithTimScarfe)
 - [umap code](https://github.com/lmcinnes/umap/tree/9b012b76b12da44e33314dc1029070baceb84616/umap)
 
 ### Are you a coder? then check this out!!!
