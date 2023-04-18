@@ -61,6 +61,13 @@ Now watch `image_test.ipynb` file.
 - [Paper Review - UMAP](https://www.youtube.com/watch?v=G9s3cE8TNZo&ab_channel=MachineLearningDojowithTimScarfe)
 - [umap code](https://github.com/lmcinnes/umap/tree/9b012b76b12da44e33314dc1029070baceb84616/umap)
 
+## Manifold Learning
+
+- [drewwilimitis/Manifold-Learning](https://github.com/drewwilimitis/Manifold-Learning)
+- [Geometric Matrix Completion](https://arxiv.org/pdf/1704.06803.pdf)
+- [hard-soft-clustering-with-k-means](https://sandipanweb.wordpress.com/2017/03/19/hard-soft-clustering-with-k-means-weighted-k-means-and-gmm-em/)
+- [Correspondence between symmetric NMF, k-means, biclustering and spectral clustering](http://borisburkov.net/2022-08-31-1/)
+
 ### Are you a coder? then check this out!!!
 
 If are a coder, and love to deep dive into code then check [demystify.md](https://github.com/emonhossainraihan/Geom-nmf/blob/main/development/demystify.md)

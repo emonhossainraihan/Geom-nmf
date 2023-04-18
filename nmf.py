@@ -2,6 +2,7 @@
 
 import numpy as np
 from pandas import DataFrame
+import torch
 
 def random_initialization(A,rank):
     """Random initialization of W and H matrices.
@@ -128,3 +129,32 @@ def mu_method(A,k,max_iter,init_mode='random'):
         norms.append(norm)
         print('Iteration: ', n, 'norm: ', norm)
     return W ,H ,norms 
+
+def mod_nmf(X, k, lr, epochs):
+    # X: input matrix of size (m, n)
+    # k: number of latent factors
+    # lr: learning rate
+    # epochs: number of training epochs
+    m, n = X.shape
+    W = torch.rand(m, k, requires_grad=True)  # initialize W randomly
+    H = torch.rand(k, n, requires_grad=True)  # initialize H randomly
+    eps = 1e-9  # small value to avoid division by zero
+    # training loop
+    for i in range(epochs):
+        # compute reconstruction error
+        loss = torch.norm(X - torch.matmul(W, H), p='fro')
+        # compute gradients
+        W_pos = torch.relu(W)  # separate positive and negative parts of W
+        W_neg = torch.relu(-W)
+        H_pos = torch.relu(H)  # separate positive and negative parts of H
+        H_neg = torch.relu(-H)
+        grad_W_pos = torch.matmul((torch.matmul(W_pos, H_pos) - X.float() ), H_pos.t())
+        grad_W_neg = torch.matmul((torch.matmul(W_neg, H_pos) - X.float() ), H_pos.t())
+        grad_H_pos = torch.matmul(W_pos.t(), (torch.matmul(W_pos, H_pos) - X.float() ))
+        grad_H_neg = torch.matmul(W_pos.t(), (torch.matmul(W_pos, H_neg) - X.float() ))
+        # update parameters using multiplicative update rule
+        W  = W*torch.sqrt((grad_W_pos + eps) / (grad_W_neg + eps))
+        H = H*torch.sqrt((grad_H_pos + eps) / (grad_H_neg + eps))
+        if i % 10 == 0:
+            print(f"Epoch {i}: loss = {loss.item()}")
+    return W.detach(), H.detach()
