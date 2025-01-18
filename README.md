@@ -27,8 +27,8 @@ Now watch `image_test.ipynb` file.
 
 ### Tasks
 
-- [ ] Implementation of $\ell_{2,1}$/$\ell_{0}$ in PyTorch: assign @Hartz-I & @Ratna-lodh
-- [ ] Apply Low rank approximation (fast way) : assign @brucewayne404
+- [ ] Implementation of $\ell_{2,1}$/$\ell_{0}$ in PyTorch: assign to 
+- [ ] Apply Low rank approximation (fast way) : assign to 
 - [ ] Algorithm design @emonhossainraihan
 
 ### Question
